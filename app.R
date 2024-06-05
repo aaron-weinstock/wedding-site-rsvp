@@ -10,8 +10,14 @@ library(stringr)
 # gs4_auth()
 # list.files(".secrets")
 # gs4_deauth()
-# gs4_auth(cache=".secrets", email="aaronweinstock22@gmail.com")
-gs4_auth(cache=".secrets", email=TRUE, use_oob=TRUE)
+gs4_auth(cache=".secrets", email="aaronweinstock22@gmail.com")
+
+# options(
+#   # whenever there is one account token found, use the cached token
+#   gargle_oauth_email = TRUE,
+#   # specify auth tokens should be stored in a hidden directory ".secrets"
+#   gargle_oauth_cache = ".secrets"
+# )
 
 # Data =========================================================================
 
