@@ -4,6 +4,15 @@ library(shinycssloaders)
 library(googlesheets4)
 library(stringr)
 
+# setwd(r"(C:\Users\student\Documents\GitHub\wedding-site-rsvp\rsvp)")
+# 
+# options(gargle_oauth_cache = ".secrets")
+# gs4_auth()
+# list.files(".secrets")
+# gs4_deauth()
+# gs4_auth(cache=".secrets", email="aaronweinstock22@gmail.com")
+gs4_auth(cache=".secrets", email=TRUE, use_oob=TRUE)
+
 # Data =========================================================================
 
 # Globals
